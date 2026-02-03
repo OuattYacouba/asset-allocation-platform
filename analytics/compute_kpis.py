@@ -73,6 +73,3 @@ LEFT JOIN drawdown_final d ON s.ticker = d.ticker
 kpis.to_parquet(GOLD_PATH / "asset_kpis.parquet")
 
 print("✅ KPIs financiers calculés (Gold)")
-
-import pandas as pd
-pd.read_parquet("storage/data/gold/asset_kpis.parquet")
